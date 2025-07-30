@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="big-box">
+        <div class="main">
+            <h1>Password manager</h1>
+
+            <span id="addTab">Add new password</span> |
+            <span id="listTab">List of passwords</span>
+        </div>
+
+        <!-- Form Section -->
+        <div class="sec1" id="addSection">
+            <h2>Username</h2>
+            <input type="text" id="usernameInput" placeholder="Enter your username">
+
+            <h2>Password</h2>
+            <input type="text" id="passwordInput" placeholder="Enter your password">
+            <button id="generateBtn">Generate hard password</button>
+
+            <br>
+            <div class="submit">
+                <button id="clearBtn">clear</button>
+                <button id="saveBtn">save</button>
+            </div>
+        </div>
+
+        <!-- Password List Section -->
+        <div class="sec2" id="listSection" style="display: none">
+            <h2>Saved Passwords</h2>
+            <table id="passwordTable"> 
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Example entries -->
+                    <tr>
+                        <td>example@gmail.com</td>
+                        <td>********</td>
+                        <td>
+                            <button class="buttons">Show</button>
+                            <button class="buttons">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>mybankuser</td>
+                        <td>********</td>
+                        <td>
+                            <button class="buttons">Show</button>
+                            <button class="buttons">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
